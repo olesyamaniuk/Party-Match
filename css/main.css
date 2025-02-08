@@ -213,9 +213,13 @@ a {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
+  transition: all 0.1s ease;
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
+}
+.navigation__link:hover,
+.navigation__link:focus {
+  color: rgba(254, 253, 2, 1);
 }
 
 .header.is-open {
@@ -337,7 +341,11 @@ a {
 
   padding: 16px 50px 315px;
 }
-
+.home__google-button_link:hover .home__google-button_image {
+  content: url("/image/home/1.png");
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 @media screen and (min-width: 1200px) {
   .home {
     width: 1440px;
